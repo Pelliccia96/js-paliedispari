@@ -21,19 +21,15 @@ function computerNum() {
 }
 
 function resultEvOd() {
-    if (result % 2 == 0)
-    return true;
+    if (result % 2 == 0) {
+        return true;
+    }
 }
 
 if (resultEvOd(result) == true) {
     if (choiseEvOd == "pari") {
         alert(`Il risultato è pari (${result}), hai vinto.`);
-    } else {
-    alert(`il risultato è dispari (${result}), hai perso.`);
-}} else {
-    if (choiseEvOd == "dispari") {
-        alert(`Il risultato è dispari (${result}), hai vinto.`);
-    } else {
-        alert(`Il risultato è pari (${result}), hai perso.`);
     }
+} else {
+    alert(`il risultato è dispari (${result}), hai perso.`);
 }
