@@ -14,8 +14,26 @@ const pcNumber = parseInt(computerNum());
 let result = userNumber + pcNumber;
 console.log(result);
 
-function computerNum () {
+function computerNum() {
     const randomNum = Math.floor((Math.random() * 5) + 1);
     console.log("Numero Pc: " + randomNum);
     return randomNum;
+}
+
+function resultEvOd() {
+    if (result % 2 == 0)
+    return true;
+}
+
+if (resultEvOd(result) == true) {
+    if (choiseEvOd == "pari") {
+        alert(`Il risultato è pari (${result}), hai vinto.`);
+    } else {
+    alert(`il risultato è dispari (${result}), hai perso.`);
+}} else {
+    if (choiseEvOd == "dispari") {
+        alert(`Il risultato è dispari (${result}), hai vinto.`);
+    } else {
+        alert(`Il risultato è pari (${result}), hai perso.`);
+    }
 }
